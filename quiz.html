@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script src="main.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <section id="title-section" class="mt-5 mb-5">
+                <h3>General IQ Quiz</h3>
+            </section>
+
+            <section id="progress-section" class="mb-5">
+                <p>Progress</p>
+                <div class="progress">
+                    <div id="progressbar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="15"></div>
+                </div>
+            </section>
+
+            <section id="progress-section" class="mb-5">
+                <p id="timer" class="display-4">10:00</p>
+            </section>
+            
+            <section id="accordion-section">
+
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h3 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Question 1
+                                    </button>
+                                </h3>
+                            </div>
+                          
+                            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <!--Question-->
+                                    <div class="form-group">
+                                        <p>What year is it?</p>
+                                    </div>
+
+                                    <!--Answers-->
+                                    <div class="form-group">
+                                        <input id="a1" class="answer" name="q1-answer" type="radio" value="1"> 1804
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="a2" class="answer" name="q1-answer" type="radio" value="2"> 2033
+                                    </div>
+
+                                    <div class="form-group">
+                                        <!--Correct Answer-->
+                                        <input id="a3" class="answer" name="q1-answer" type="radio" value="3"> 2019
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="a4" class="answer" name="q1-answer" type="radio" value="4"> 1812
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h3 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Question 2
+                                    </button>
+                                </h3>
+                            </div>
+                          
+                            <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <!--Question-->
+                                    <div class="form-group">
+                                        <p>What color is <span class="text-danger">this</span></p>
+                                    </div>
+
+                                    <!--Answers-->
+                                    <div class="form-group">
+                                        <input id="a5" class="answer" name="q2-answer" type="radio" value="1"> Choo Choo Blue
+                                    </div>
+
+                                    <div class="form-group">
+                                        <!--Correct Answer-->
+                                        <input id="a6" class="answer" name="q2-answer" type="radio" value="2"> Danger Red
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="a7" class="answer" name="q2-answer" type="radio" value="3"> Quantum Particle Perrywinkle
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="a8" class="answer" name="q2-answer" type="radio" value="4"> Mean Green Bean
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Question 3
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>What is the square root of 6 donuts</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a9" class="answer" name="q3-answer" type="radio" value="1"> 2.44948974278
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a10" class="answer" name="q3-answer" type="radio" value="2"> 3.46410161514
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a11" class="answer" name="q3-answer" type="radio" value="3"> 4.69041575982
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a12" class="answer" name="q3-answer" type="radio" value="4"> 1.73205080757
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            Question 4
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Which of the following is true..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a13" class="answer" name="q4-answer" type="radio" value="1"> Bears
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a14" class="answer" name="q4-answer" type="radio" value="2"> Beets
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a15" class="answer" name="q4-answer" type="radio" value="3"> Battlestar Glactica
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a16" class="answer" name="q4-answer" type="radio" value="4"> Bears, Beets, Battlestar Galactica.
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            Question 5
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Which of the following is true..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a17" class="answer" name="q5-answer" type="radio" value="1"> Slim Jims are spheres of meat.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a18" class="answer" name="q5-answer" type="radio" value="2"> Slim Jims are pyramids of meat.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a19" class="answer" name="q5-answer" type="radio" value="3"> Slim Jims are snub dysphenoids of meat.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a20" class="answer" name="q5-answer" type="radio" value="4"> Slim Jims are rods of meat.
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                            Question 6
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Which of the following is true..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a21" class="answer" name="q6-answer" type="radio" value="1"> Question 4 quoted Star Wars.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a22" class="answer" name="q6-answer" type="radio" value="2"> Question 4 quoted The Simpsons.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a23" class="answer" name="q6-answer" type="radio" value="3"> Question 4 quoted The Office.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a24" class="answer" name="q6-answer" type="radio" value="4"> Question 4 quoted Breaking Bad.
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingSeven">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                            Question 7
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseSeven" class="collapse hide" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>If someone was pushing you around, telling you what to do, what would you say?</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a25" class="answer" name="q7-answer" type="radio" value="1"> I don't know.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a26" class="answer" name="q7-answer" type="radio" value="2"> Slim Jims are pyramids of meat.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a27" class="answer" name="q7-answer" type="radio" value="3"> I'm the real Slim Shadey.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a28" class="answer" name="q7-answer" type="radio" value="4"> Step off.
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingEight">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                            Question 8
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseEight" class="collapse hide" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Microphones pick up..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a29" class="answer" name="q8-answer" type="radio" value="1"> Chicks
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a30" class="answer" name="q8-answer" type="radio" value="2"> Sound
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a31" class="answer" name="q8-answer" type="radio" value="3"> Light
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a32" class="answer" name="q8-answer" type="radio" value="4"> Trucks
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingNine">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                            Question 9
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseNine" class="collapse hide" aria-labelledby="headingNine" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Pepsi only sells more product than Coca-Cola because of..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a33" class="answer" name="q9-answer" type="radio" value="4"> a pretty logo
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a34" class="answer" name="q9-answer" type="radio" value="2"> a larger marketing budget
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a35" class="answer" name="q9-answer" type="radio" value="3"> great PR
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a36" class="answer" name="q9-answer" type="radio" value="1"> Mountain Dew
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingTen">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                            Question 10
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseTen" class="collapse hide" aria-labelledby="headingTen" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Coke is still better than Pepsi because..</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a37" class="answer"name="q10-answer" type="radio" value="1"> It's Coke, duh.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a38" class="answer"name="q10-answer" type="radio" value="2"> a dope Polar Bear mascot.
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a39" class="answer"name="q10-answer" type="radio" value="3"> Well, Santa likes it soo..
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a40" class="answer"name="q10-answer" type="radio" value="4"> cursive.
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingEleven">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                            Question 11
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseEleven" class="collapse hide" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>True or False: Red Bull gives you wings.</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a41" class="answer"name="q11-answer" type="radio" value="1"> True
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a42" class="answer"name="q11-answer" type="radio" value="2"> False
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingTwelve">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                            Question 12
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseTwelve" class="collapse hide" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>True or False: Got milk?</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="43" class="answer"name="q12-answer" type="radio" value="1"> True
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a44" class="answer"name="q12-answer" type="radio" value="2"> False
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingThirteen">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                                            Question 13
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseThirteen" class="collapse hide" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>True or False: Bush did 9/11</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="a45" class="answer"name="q13-answer" type="radio" value="1"> True
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a46" class="answer"name="q13-answer" type="radio" value="2"> True
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFourteen">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                                            Question 14
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseFourteen" class="collapse hide" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>Coke > Pepsi</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <!--Correct Answer-->
+                                            <input id="a47" class="answer"name="q14-answer" type="radio" value="1"> True
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input id="a48" class="answer"name="q14-answer" type="radio" value="2"> False
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFifteen">
+                                    <h3 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                                            Question 15
+                                        </button>
+                                    </h3>
+                                </div>
+                              
+                                <div id="collapseFifteen" class="collapse hide" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                                    <div class="card-body">
+    
+                                        <!--Question-->
+                                        <div class="form-group">
+                                            <p>How many questions are there on this quiz?</p>
+                                        </div>
+    
+                                        <!--Answers-->
+                                        <div class="form-group">
+                                            <input id="text-answer" name="q15-answer" type="text" placeholder="Don't be scared.">
+                                        </div>
+    
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-5 pb-5">
+                        <button class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+
+            </section>
+
+        </div>
+
+    </body>
+
+</html>
